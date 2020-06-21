@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@
 
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_wayne.mk
+    $(LOCAL_DIR)/lineage_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_wayne-eng \
-    carbon_wayne-userdebug \
-		carbon_wayne-user
+    lineage_wayne-eng \
+    lineage_wayne-userdebug \
+		lineage_wayne-user
