@@ -24,10 +24,11 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit Sakura product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-SAKURA_OFFICIAL := true
+# Inherit Ancient product configuration
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
+IS_PHONE := true
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -39,6 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_wayne
+PRODUCT_NAME := ancient_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
