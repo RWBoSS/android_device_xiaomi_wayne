@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2018-2020 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,10 +31,6 @@ DEVICE_PATH := device/xiaomi/wayne
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -95,10 +91,3 @@ PRODUCT_COPY_FILES += \
 
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
-
-# AOSP DEVICE
-PRODUCT_NAME := aosp_wayne
-PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := Mi 6X (AOSP)
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Xiaomi
